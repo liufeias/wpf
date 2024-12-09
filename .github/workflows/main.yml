@@ -16,9 +16,9 @@ jobs:
       uses: nuget/setup-nuget@v2
       with:
         nuget-version: '5.x'
-    - name: Build
+    - name: 执行构建脚本
       run: .\build.cmd -pack -ci -configuration Release -prepareMachine /p:Platform=x86
-    - name: Push
+    - name: 执行打包上传操作
       uses: actions/upload-artifact@v4
       with:
         name: WPF-x86
