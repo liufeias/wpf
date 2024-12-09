@@ -1,5 +1,19 @@
 <Project>
   <PropertyGroup>
+     <!-- 
+        https://www.cnblogs.com/calvinK/p/14982676.html
+        让自己的nuget包支持源代码调试
+    -->
+    <DebugType>embedded</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <!-- 
+        https://docs.pingcode.com/baike/3467666
+        让自己的nuget包支持源代码调试
+    -->
+    <EmbedAllSources>true</EmbedAllSources>
+    <SourceLinkCreate>true</SourceLinkCreate>
+
     <RepositoryName>wpf</RepositoryName>
     <WindowsDesktopARM64Support>true</WindowsDesktopARM64Support>
     <TargetFramework>net9.0</TargetFramework>
