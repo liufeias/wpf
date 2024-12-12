@@ -21,7 +21,7 @@ jobs:
       with:
         nuget-version: '5.x'
     - name: 执行构建脚本
-      run: .\build.cmd -pack -ci -configuration Release -prepareMachine /p:Platform=x86
+      run: .\build.cmd -rebuild -pack -ci -configuration Release -prepareMachine /p:Platform=x86
     - name: 执行打包上传操作
       uses: actions/upload-artifact@v4
       with:
